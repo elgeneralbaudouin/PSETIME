@@ -1,7 +1,7 @@
 section{
   width: 77%;
   display: inline-block;
-  float: right;
+  /* float: right; */
 
   }
   .cl1{
@@ -40,7 +40,7 @@ section{
         margin: 20px 19px;
       }
       form > input {
-        height: p 45px;
+        height: 45px;
         width: 200px;
       }
 
@@ -49,6 +49,9 @@ section{
       font-size:  18px;
       height: 45px;
       width: 200px;
+    }
+    .div-modal{
+      padding: 0 5px;
     }
 
     .dfin{
@@ -92,4 +95,7 @@ margin: 10px 25px 20px 0;
   margin: 10px 160px;
   border-radius: 25px;
   background-color:rgb(27, 158, 245);
+}
+i{
+  padding: 4px 4px;
 }

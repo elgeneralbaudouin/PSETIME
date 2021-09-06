@@ -52,6 +52,7 @@ import { GraphessComponent } from './pages/Tableau de bord/Components/graphess/g
 import { PieComponent } from './pages/Tableau de bord/Components/pie/pie.component';
 import { MontreComponent } from './pages/Tableau de bord/Components/montre/montre.component';
 import { GraphesssComponent } from './pages/Tableau de bord/Components/graphesss/graphesss.component';
+import { ProfilemployeComponent } from './pages/Employes/profilemploye/profilemploye.component';
 import {NgApexchartsModule} from 'ng-apexcharts';
 import { PieAComponent } from './pages/Tableau de bord/Components/pie-a/pie-a.component';
 import { PieBComponent } from './pages/Tableau de bord/Components/pie-b/pie-b.component';
@@ -86,6 +87,7 @@ registerLocaleData(hi);
     GraphComponent,
     CartComponent,
     TableComponent,
+    ProfilemployeComponent,
     CalendComponent,
     GraphesComponent,
     PieComponent,
@@ -149,6 +151,7 @@ registerLocaleData(hi);
     {path:'D_Permissions', component: DemandesPermissionsComponent},
     {path:'R_Revendications', component: RevendicationsComponent},
     {path:'R_Permissions', component: PermissionsComponent},
+    {path:'profilemploye', component: ProfilemployeComponent},
     {path:'Employe', component: EmployeComponent},
 
     ])

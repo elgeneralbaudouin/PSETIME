@@ -11,5 +11,27 @@ export class TousLesEmployesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  image3:string = "assets/OIP.jpg";
+  //  cette fonction permet d'afficher la liste des employes
+  public listeEmploye: any[] = [
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Njoya Moustapha",
+      Fonction: "Stagiaire"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Leonel Kotieu",
+      Fonction: "Stagiaire"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Dongmo Baudouin",
+      Fonction: "Dev Back End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    }
+  ];
 }

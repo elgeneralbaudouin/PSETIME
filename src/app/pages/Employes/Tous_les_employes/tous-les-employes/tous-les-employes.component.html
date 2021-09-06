@@ -6,7 +6,7 @@
         <p class="nom_em"><span>PSE</span>TIME / Tous les employés</p>
     </div>
     <button class="cl1 b1 btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <mat-icon>add</mat-icon>Ajouter Employé</button>
+      <i nz-icon nzType="plus" nzTheme="outline"></i>Ajouter Employé</button>
 
 
 <!-- Modal -->
@@ -133,7 +133,7 @@
             <input type="number" class="form-control" id="validationCustom01" required>
           </div>
           <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <mat-icon>add</mat-icon>Ajouter Employé</button>
+            <i nz-icon nzType="plus" nzTheme="outline"></i>Ajouter Employé</button>
         </form>
       </div>
       <div class="modal-footer">
@@ -166,76 +166,14 @@
         <div class="col-12">
           <button type="submit" class="btn btn-success">Rechercher</button>
         </div>
-      </form>
+    </form>
       <div class="cl1">
-            <div class="card">
+        <!-- ngFor fait une boucle qui nous permet de lire les elements de typescript -->
+            <div class="card" *ngFor="let employe of listeEmploye">
                 <div class="card-body">
-                <a href="#"><img [src]=image3 alt="de"></a>
-                <p class="card-text">Njoya Moustapha</p>
-                <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                <a href="#"><img [src]=image3 alt="de"></a>
-                <p class="card-text">Njoya Moustapha</p>
-                <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <a href="#"><img [src]=image3 alt="de"></a>
-                    <p class="card-text">Njoya Moustapha</p>
-                    <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <a href="#"><img [src]=image3 alt="de"></a>
-                    <p class="card-text">Njoya Moustapha</p>
-                    <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                <a href="#"><img [src]=image3 alt="de"></a>
-                <p class="card-text">Njoya Moustapha</p>
-                <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                <a href="#"><img [src]=image3 alt="de"></a>
-                <p class="card-text">Njoya Moustapha</p>
-                <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <a href="#"><img [src]=image3 alt="de"></a>
-                    <p class="card-text">Njoya Moustapha</p>
-                    <p class="card-text">Developpeur</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <a href="#"><img [src]=image3 alt="de"></a>
-                    <p class="card-text">Njoya Moustapha</p>
-                    <p class="card-text">Developpeur</p>
+                <a routerLink="/profilemploye"><img src="{{ employe.image3 }}" alt="de"></a>
+                <p class="card-text">{{ employe.Nom }}</p>
+                <p class="card-text">{{employe.Fonction }}</p>
                 </div>
 
             </div>
@@ -244,4 +182,3 @@
 
 
 </section>
-
