@@ -1,0 +1,247 @@
+<h1>Tous les employés</h1>
+
+
+<section>
+    <div class="cla_em">
+        <p class="nom_em"><span>PSE</span>TIME / Tous les employés</p>
+    </div>
+    <button class="cl1 b1 btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <mat-icon>add</mat-icon>Ajouter Employé</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-title">Ajouter Employé</p>
+
+        <form>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Mot de Passe</label>
+            <input type="password" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Telephone</label>
+            <input type="number" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Date de Naissance</label>
+            <input type="date" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Date d'adhesion</label>
+            <input type="date" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label class="form-label">Poste</label>
+            <input class="form-control" list="datalist" placeholder="Poste" required>
+                <datalist id="datalist">
+                  <option value="Developpeur front end">
+                  <option value="Developpeur Back end">
+                  <option value="Infographe">
+                </datalist>
+          </div>
+          <div class="div-modal col-md-6">
+            <label class="form-label">Groupe</label>
+            <input class="form-control" list="datalist" placeholder="Groupe" required>
+                <datalist id="datalist">
+                  <option value="Developpeur front end">
+                  <option value="Developpeur Back end">
+                  <option value="Infographe">
+                </datalist>
+          </div>
+          <div class="div-modal col-md-12">
+            <label for="validationCustom01" class="form-label">Image</label>
+            <input type="file" class="form-control" id="validationCustom01" required style="width: 97%;">
+          </div>
+
+          <p class="modal-title">Informations personnelles</p>
+
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Nationalié</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label class="form-label">Religion</label>
+            <input class="form-control" list="datali2" placeholder="Religion" required>
+                <datalist id="datali2">
+                  <option value="Musulman">
+                  <option value="Chretien">
+                  <option value="Juif">
+                </datalist>
+          </div>
+          <div class="div-modal col-md-6">
+            <label class="form-label">Situation Matrimoniale</label>
+            <input class="form-control" list="datali3" placeholder="Situation Matrimoniale" required>
+                <datalist id="datali3">
+                  <option value="Marié">
+                  <option value="célibataire">
+                </datalist>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Adresse</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Nombre d'enfants</label>
+            <input type="number" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label class="form-label">Genre</label>
+            <input class="form-control" list="datali4" placeholder="Genre" required>
+                <datalist id="datali4">
+                  <option value="Homme">
+                  <option value="Femme">
+                </datalist>
+          </div>
+
+          <p class="modal-title">Personnes à contacter en cas d'urgence</p>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Relation</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+          </div>
+          <div class="div-modal col-md-6">
+            <label for="validationCustom01" class="form-label">Telephone</label>
+            <input type="number" class="form-control" id="validationCustom01" required>
+          </div>
+          <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <mat-icon>add</mat-icon>Ajouter Employé</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <form class="row row-cols-lg-auto">
+        <div class="col-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Employé ID">
+          </div>
+        </div>
+
+        <div class="col-12">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Nom Employé">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Poste">
+            </div>
+          </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Rechercher</button>
+        </div>
+      </form>
+      <div class="cl1">
+            <div class="card">
+                <div class="card-body">
+                <a href="#"><img [src]=image3 alt="de"></a>
+                <p class="card-text">Njoya Moustapha</p>
+                <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <a href="#"><img [src]=image3 alt="de"></a>
+                <p class="card-text">Njoya Moustapha</p>
+                <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <a href="#"><img [src]=image3 alt="de"></a>
+                    <p class="card-text">Njoya Moustapha</p>
+                    <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <a href="#"><img [src]=image3 alt="de"></a>
+                    <p class="card-text">Njoya Moustapha</p>
+                    <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <a href="#"><img [src]=image3 alt="de"></a>
+                <p class="card-text">Njoya Moustapha</p>
+                <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <a href="#"><img [src]=image3 alt="de"></a>
+                <p class="card-text">Njoya Moustapha</p>
+                <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <a href="#"><img [src]=image3 alt="de"></a>
+                    <p class="card-text">Njoya Moustapha</p>
+                    <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <a href="#"><img [src]=image3 alt="de"></a>
+                    <p class="card-text">Njoya Moustapha</p>
+                    <p class="card-text">Developpeur</p>
+                </div>
+
+            </div>
+
+      </div>
+
+
+</section>
+

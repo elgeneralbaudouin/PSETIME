@@ -1,0 +1,102 @@
+
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [(nzCollapsed)]="isCollapsed"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="https://ng.ant.design/" target="_blank">
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        <h1>Psetime</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="Tableau de bord" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Administrateur">Administrateur</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Employe">Employé</a>
+          </li>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Employés " nzIcon="user">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Tous_les_employes">Tous les employés</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Presences">Présences</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Groupes">Groupes</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Jour_feriers">Jour féviers</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/Conges">Congés</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Requêtes" nzIcon="pull-request">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/R_Revendications">Revendications</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/R_Permissions">Permissions</a>
+          </li>
+
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Demandes" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/D_Revendications">Revendications</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/D_Permissions">Permissions</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li nz-submenu nzOpen nzTitle="Paramètres" nzIcon="setting">
+      <li nz-submenu nzOpen nzTitle="Notifications" nzIcon="bell">
+      </li>
+    </ul>
+    <div class="profile_info">
+      <div class="img_holder">
+        <img src="C:\Users\Leonel Kotieu\OneDrive\Images\image1.jpg">
+      </div>
+      <p class="tilte"> KOTIEU LEONEL DURAN </p>
+      <p class="sub_title">leonelkotieu@gmail.com</p>
+    </div>
+  </nz-sider>
+  <nz-layout>
+
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+            <i class="trigger"
+
+               nz-icon
+               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+            > </i>
+        </span>
+          <div class="example-button-row">
+                <button mat-raised-button color="primary">Primary</button>
+            </div>
+      </div>
+
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+
+
