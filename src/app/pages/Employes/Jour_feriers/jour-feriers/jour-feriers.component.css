@@ -1,0 +1,53 @@
+section{
+  width: 95%;
+  display: inline-block;
+}
+
+  
+  .cl1{
+    margin: 0 0 20px 30px;
+}
+
+.cla_em{
+    background-color: white;
+    margin: 30px 0 0 30px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+    .nom_em{
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px;
+    }
+        span{
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(27, 158, 245);
+        }
+.b1{
+    background-color: rgb(27, 158, 245);
+    border-color: rgb(27, 158, 245);
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.div-modal{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+.ajt{
+  width: 100px;
+  margin: 10px 160px;
+  border-radius: 25px;
+  background-color: rgb(27, 158, 245);
+}

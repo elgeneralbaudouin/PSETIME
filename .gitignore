@@ -1,0 +1,67 @@
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+
+N° Voir http://help.github.com/ignore-files/ pour plus d’informations sur l’ignorance des fichiers.
+
+# sortie compilée
+/Dist
+/Tmp
+/out-tsc
+N° N’existe que si Bazel a été exécuté
+/bazel-out
+
+# dépendances
+/node_modules
+
+# fichiers de profilage
+chrome-profiler-events*.json
+
+N° IDE et éditeurs
+/.idée
+.projet
+.classpath
+.c9/
+*.lancer
+.paramètres/
+*.sublime-espace de travail
+
+N° IDE - VSCode
+.vscode/*
+! .vscode/settings.json
+! .vscode/tasks.json
+! .vscode/launch.json
+! .vscode/extensions.json
+.histoire/*
+
+# divers
+/.sass-cache
+/connect.lock
+/couverture
+/libpeerconnection.log
+npm-debug.log
+erreur de fil.log
+testem.log
+/saisies
+
+N° Fichiers système
+. DS_Store
+Pouces.db
+

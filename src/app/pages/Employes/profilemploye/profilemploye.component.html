@@ -1,0 +1,257 @@
+<section *ngFor="let profilem of profilemploye">
+
+    <div class="cla_em">
+        <div class="col-md-4" style="display: inline-block; width: 200px;">
+            <img src={{profilem.image3}} alt="de" class="image3">
+        </div>
+        <div class="col-md-4 coltext txtr">
+            <p>{{profilem.Nom}}</p>
+            <p>Fonction : {{profilem.Fonction}}</p>
+            <p>Tel : {{profilem.telephone}}</p>
+            <p>ID : {{profilem.Id}}</p>
+            <p>Date d'inscription : {{profilem.date}}</p>
+            <button class="btn btn-primary" href=""  data-bs-toggle="modal" data-bs-target="#exampleMod"> Envoyer un message</button>
+
+            <div class="modal fade" id="exampleMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-title">Message</p>
+
+                      <form>
+                        <div class="div-modal col-md-12">
+                            <label for="validationCustom01" class="form-label">Objet</label><br>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="div-modal col-md-12">
+                            <label for="validationCustom01" class="form-label col-md-12">Votre message</label>
+                            <textarea name="text" id="" cols="30" rows="10" class="col-md-12"></textarea>
+                        </div>
+
+
+                        <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i nz-icon nzType="message" nzTheme="outline" style="padding: 5px;"></i> Envoyer</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 coltext" style="position: relative; top: -110px;">
+            <!-- <p>Numero de telephone</p> -->
+            <p>E-mail: {{profilem.email}}</p>
+            <p>Date de naissance : {{profilem.datenais}}</p>
+        </div>
+        <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btou"><i nz-icon nzType="edit" nzTheme="outline"></i></a>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="modal-title">Modifier Employé</p>
+
+                  <form>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Prenom</label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Nom d'utilisateur</label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Nouveau mot de Passe</label>
+                      <input type="password" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                        <label class="form-label">Poste</label>
+                        <input class="form-control" list="datalist" placeholder="Poste" required>
+                            <datalist id="datalist">
+                              <option value="Developpeur front end">
+                              <option value="Developpeur Back end">
+                              <option value="Infographe">
+                            </datalist>
+                      </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Date de Naissance</label>
+                      <input type="date" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                      <label for="validationCustom01" class="form-label">Date d'adhesion</label>
+                      <input type="date" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                        <label for="validationCustom01" class="form-label">Telephone</label>
+                        <input type="number" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="div-modal col-md-6">
+                        <label class="form-label">Groupe</label>
+                        <input class="form-control" list="datalist" placeholder="Groupe" required>
+                            <datalist id="datalist">
+                              <option value="Developpeur front end">
+                              <option value="Developpeur Back end">
+                              <option value="Infographe">
+                            </datalist>
+                      </div>
+
+                    <div class="div-modal col-md-12">
+                        <label for="validationCustom01" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="validationCustom01" required style="width: 97%;">
+                      </div>
+
+
+                    <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i nz-icon nzType="edit" nzTheme="outline"></i>Modifier Employé</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+
+    <div class="cla_em2 col-md-6 v2">
+        <h2>Informations personnelles</h2>
+        <div class="">
+            <p>Nationalité : {{profilem.nationalite}}</p>
+            <p>Religion : {{profilem.religion}}</p>
+            <p>Situation Matrimoniale : {{profilem.situation}}</p>
+            <p>Adresse : {{profilem.adresse}}</p>
+            <p>Nombre d'enfants : {{profilem.enfants}}</p>
+            <p>Genre : {{profilem.genre}}</p>
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModa8" class="botin"><i nz-icon nzType="edit" nzTheme="outline"></i></a>
+
+
+            <div class="modal fade" id="exampleModa8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-title">Modifier Informations personnelles</p>
+
+                      <form>
+                        <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Nationalié</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="div-modal col-md-6">
+                            <label class="form-label">Religion</label>
+                            <input class="form-control" list="datali2" placeholder="Religion" required>
+                                <datalist id="datali2">
+                                  <option value="Musulman">
+                                  <option value="Chretien">
+                                  <option value="Juif">
+                                </datalist>
+                        </div>
+                        <div class="div-modal col-md-6">
+                            <label class="form-label">Situation Matrimoniale</label>
+                            <input class="form-control" list="datali3" placeholder="Situation Matrimoniale" required>
+                                <datalist id="datali3">
+                                  <option value="Marié">
+                                  <option value="célibataire">
+                                </datalist>
+                        </div>
+                        <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Adresse</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                          </div>
+                          <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Nombre d'enfants</label>
+                            <input type="number" class="form-control" id="validationCustom01" required>
+                          </div>
+                          <div class="div-modal col-md-6">
+                            <label class="form-label">Genre</label>
+                            <input class="form-control" list="datali4" placeholder="Genre" required>
+                                <datalist id="datali4">
+                                  <option value="Homme">
+                                  <option value="Femme">
+                                </datalist>
+                          </div>
+
+                        <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i nz-icon nzType="edit" nzTheme="outline"></i>Modifier Info</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    <div class="cla_em2 col-md-6 v1">
+        <h2>Personnes à contacter</h2>
+        <div class="">
+            <p>Nom : {{profilem.nompersonneurge}}</p>
+            <p>Nationalité : {{profilem.nationaliteper}}</p>
+            <p>Religion : {{profilem.relper}}</p>
+            <p>Situation Matrimoniale : {{profilem.mariage}}</p>
+            <p>Adresse : {{profilem.adreper}}</p>
+            <p>Genre : {{profilem.genreper}}</p>
+            <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModa9"><i nz-icon nzType="edit" nzTheme="outline"></i></a>
+
+            <div class="modal fade" id="exampleModa9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-title">Personnes à contacter en cas d'urgence</p>
+
+                      <form>
+                        <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                          </div>
+                          <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Prenom</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                          </div>
+                          <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Relation</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                          </div>
+                          <div class="div-modal col-md-6">
+                            <label for="validationCustom01" class="form-label">Telephone</label>
+                            <input type="number" class="form-control" id="validationCustom01" required>
+                          </div>
+
+                        <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i nz-icon nzType="edit" nzTheme="outline"></i>Modifier Pers</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>

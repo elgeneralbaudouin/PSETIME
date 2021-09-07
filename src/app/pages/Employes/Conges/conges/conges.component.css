@@ -1,0 +1,84 @@
+section{
+    width: 95%;
+    display: inline-block;
+}
+
+    .cl1{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .b1{
+        /* background-color: rgb(27, 158, 245); */
+        border-color: rgb(27, 158, 245);
+        font-size: 18px;
+        /* padding: 5px 15px; */
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    .cla_em{
+        background-color: white;
+        margin: 30px 0 0 30px;
+        padding: 0 20px;
+        border-radius: 10px;
+        width: 100%;
+    }
+        .nom_em{
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+        .nom_em > span{
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(27, 158, 245);
+        }
+
+    .rodt{
+        margin: 30px 0 0 30px;
+
+    }
+
+    .liste{
+        width: 150px;
+    }
+    form > button{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            height: 45px;
+            width: 150px;
+    }
+    table{
+        margin: 30px 30px 0 30px;        
+    }        
+    tr{
+        height: 50px;
+    }
+    td{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+    }
+    th{
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17px;
+    }
+    
+   .modal-title{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+    }
+    .div-modal{
+        display: inline-block;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .div-modal > input{
+                width: 200px;
+            }
+   .dfin{
+            margin: 10px auto;
+    }

@@ -1,0 +1,131 @@
+
+<section>
+  <div class="cla_em">
+      <p class="nom_em"><span>PSE</span>TIME / Congés</p>
+  </div>
+  <button class="cl1 b1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa9">Ajouter congé</button>
+
+  <div class="modal fade" id="exampleModa9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-title">Ajouter congé</p>
+  
+          <form>
+            <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Selectionner l'employé</label>
+                <input class="form-control" list="datali4" placeholder="Employé" required>
+                <datalist id="datali4">
+                  <option value="Njoya">
+                  <option value="Leonel">
+                </datalist>
+              </div>
+              <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Type de congé</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+              </div>
+              <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Date de Debut de Congés</label>
+                <input type="date" class="form-control" id="validationCustom01" required>
+              </div>
+              <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Date de Fin (facultatif)</label>
+                <input type="date" class="form-control" id="validationCustom01">
+              </div>
+              <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Raison</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+              </div>
+              <div class="div-modal col-md-6">
+                <label for="validationCustom01" class="form-label">Statut</label>
+                <input class="form-control" list="da4" placeholder="Statut" required>
+                <datalist id="da4">
+                  <option value="En cours">
+                  <option value="Pas consommé">
+                    <option value="consommé">
+                </datalist>
+              </div>
+                               
+            <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i nz-icon nzType="plus" nzTheme="outline"></i>Créer</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+
+
+
+  <div class="rodt row row-cols-lg-auto">
+      <div class="col-12">
+        <div class="input-group">
+          <input type="text" class="form-control liste" placeholder="Nom Employé">
+        </div>
+      </div>
+        <div class="col-12">
+          <div class="input-group">
+              <input class="form-control liste" list="datalistOptions" id="exampleDataList" placeholder="Type de congé">
+              <datalist id="datalistOptions">
+                <option value="Maladie">
+                <option value="Maternité">
+                <option value="Pack">
+              </datalist>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="input-group">
+              <input class="form-control liste" list="datalistOption2" id="exampleDataList" placeholder="Statut Congé">
+              <datalist id="datalistOption2">
+                  <option value="En cours">
+                  <option value="En attente">
+                  <option value="Deja passé">
+              </datalist>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="input-group">
+            <input type="date" class="form-control liste" placeholder="Depart">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="input-group">
+            <input type="date" class="form-control liste" placeholder="Fin">
+          </div>
+        </div> 
+      </div>
+    <table class="table table-hover c1">
+      <thead class="table-info">
+          <tr>
+            <th scope="col">Employé</th>
+            <th scope="col">Type de Congé</th>
+            <th scope="col">Depart</th>
+            <th scope="col">Fin</th>
+            <th scope="col">Nbre de jour</th>
+            <th scope="col">Raison</th>
+            <th scope="col">Statut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="table-light">
+          <tr *ngFor="let conges of congesEmploye">
+            <td>
+                <p>{{conges.nom}}</p>
+            </td>
+            <td>{{conges.type}}</td>
+            <td>{{conges.datedep}}</td>
+            <td>{{conges.datefin}}</td>
+            <td>{{conges.nombre}}</td>
+            <td>{{conges.raison}}</td>
+            <td>{{conges.statut}}</td>
+            <td>{{conges.action}}</td>
+          </tr>
+        </tbody>
+  </table>
+</section>

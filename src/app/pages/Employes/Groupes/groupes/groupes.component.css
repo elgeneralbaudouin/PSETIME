@@ -1,0 +1,93 @@
+section{
+    width: 95%;
+    display: inline-block;
+  }
+ .cl1{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cla_em{
+        background-color: white;
+        margin: 30px 30px 0 30px;
+        padding: 0 20px;
+        border-radius: 10px;
+        width: 100%;
+        }
+        .nom_em{
+          font-size: 25px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding: 10px;
+        }
+          span{
+              font-weight: bold;
+              font-family: 18px;
+              color: rgb(27, 158, 245);
+          }
+    .b1{
+        background-color: rgb(27, 158, 245);
+        border-color: rgb(27, 158, 245);
+        font-size: 18px;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-family: 18px;
+    }
+
+   
+        .modal-title{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: 18px;
+        }
+        .div-modal{
+            display: inline-block;
+            /* font-family: 18px; */
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+        .ajt{
+            width: 100px;
+            margin: 10px 160px;
+            border-radius: 25px;
+            background-color: rgb(27, 158, 245);
+        }
+
+    table{
+        /* border-color: white; */
+        margin: 30px 0 0 30px;
+        
+        width: 100%;
+    }
+        
+    tr{
+        height: 50px;
+    }
+    th{
+        background-color: white;
+    }
+        .nom_em > span{
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(27, 158, 245);
+            }
+        .txtr{
+            position: relative;
+            right: -80px;
+
+        }
+        .pts{
+            position: relative;
+            top: -30px;
+        }
+        .coltext{
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+        .coltext > p{
+                padding-top: 5px;
+            }
+     
