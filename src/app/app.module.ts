@@ -63,6 +63,9 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './pages/login/login.component';
+import { TraitRevendicationsComponent } from './pages/trait-revendications/trait-revendications.component';
+import { TraitPermissisonComponent } from './pages/trait-permissison/trait-permissison.component';
+import { CongesEmployesComponent } from './pages/Employes/conges-employes/conges-employes.component';
 
 
 registerLocaleData(hi);
@@ -97,7 +100,11 @@ registerLocaleData(hi);
     PieAComponent,
     PieBComponent,
     PieCComponent,
-    PieDComponent
+    PieDComponent,
+    TraitRevendicationsComponent,
+    TraitPermissisonComponent,
+    NotificationsComponent,
+    CongesEmployesComponent
 
   ],
 
@@ -153,6 +160,10 @@ registerLocaleData(hi);
     {path:'R_Permissions', component: PermissionsComponent},
     {path:'profilemploye', component: ProfilemployeComponent},
     {path:'Employe', component: EmployeComponent},
+    {path:'traitrev', component: TraitRevendicationsComponent},
+    {path:'traitperm', component: TraitPermissisonComponent},
+    {path:'notif', component: NotificationsComponent},
+    {path:'conges-employe', component: CongesEmployesComponent},
 
     ])
 

@@ -1,8 +1,7 @@
 
 section{
-    width: 77%;
+    width: 90%;
     display: inline-block;
-    float: right;
 }
 
     .cl1{
@@ -50,7 +49,7 @@ section{
             float: right;
 
           }
-        span{
+          label>span{
             color: red;
         }
 

@@ -1,0 +1,66 @@
+<section  *ngFor="let TraiEm of trairev">
+    <div class="cla_em">
+        <p class="nom_em"><span>PSE</span>TIME / Traitement Revendication</p>
+    </div>
+  
+    <div class="cla_em2 col-md-6 v2">
+        <img img src="{{TraiEm.image3}}" alt="">
+        <div class="">
+            <h2>{{ TraiEm.Nom }}</h2>
+            <p>Fonction : {{ TraiEm.Fonction }}</p>
+            <p>ID :{{ TraiEm.Id }}</p>
+            <p>Date d'envoi : {{ TraiEm.date }}</p>
+        </div>
+    </div>
+    <div class="cla_em2 col-md-6 v1 v1prime">
+        <h2>Objet</h2>
+        <div class="">
+            <p>{{ TraiEm.textobjet }}</p>
+        </div>
+    </div>
+    <div class="cla_em2 col-md-6 v1">
+        <h2>Justification</h2>
+        <div class="">
+            <p>{{ TraiEm.justtexte1 }}</p>
+            <p>image(facultatif)</p>
+            <p>{{ TraiEm.justtexte2 }}</p>
+            <p>autre</p>
+        </div>
+    </div>
+    <div class="clt col-md-6">
+        <button class="btn btn-warning">Accepter</button>
+        <button class="btn btn-danger">Rejéter</button>
+        <button class="btn btn-primary" href=""  data-bs-toggle="modal" data-bs-target="#exampleModmes">Envoyer un message</button>
+    </div>
+    
+    <div class="modal fade" id="exampleModmes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="modal-title">Message</p>
+      
+              <form>
+                <div class="div-modal col-md-12">
+                    <label for="validationCustom01" class="form-label">Objet</label><br>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                </div>
+                <div class="div-modal col-md-12">
+                    <label for="validationCustom01" class="form-label col-md-12">Votre message</label>
+                    <textarea name="text" id="" cols="30" rows="10" class="col-md-12"></textarea>
+                </div>
+                
+                                   
+                <button class="cl1 b1 btn btn-primary d-flex dfin" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <mat-icon>library_books</mat-icon> Envoyer</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>

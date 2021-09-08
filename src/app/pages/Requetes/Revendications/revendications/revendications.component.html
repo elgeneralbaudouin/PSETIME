@@ -1,44 +1,63 @@
-<h1>Revendication</h1>
-<mat-form-field appearance="standard">
-  <mat-label>Filter</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-</mat-form-field>
+<section>
+    <div class="cla_em">
+        <p class="nom_em"><span>PSE</span>TIME / Gestion des Revedications</p>
+    </div>
 
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource" matSort>
-
-    <!-- ID Column -->
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-      <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-    </ng-container>
-
-    <!-- Progress Column -->
-    <ng-container matColumnDef="progress">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>
-      <td mat-cell *matCellDef="let row"> {{row.progress}}% </td>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-      <td mat-cell *matCellDef="let row"> {{row.name}} </td>
-    </ng-container>
-
-    <!-- Fruit Column -->
-    <ng-container matColumnDef="fruit">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Fruit </th>
-      <td mat-cell *matCellDef="let row"> {{row.fruit}} </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-    <!-- Row shown when there is no matching data. -->
-    <tr class="mat-row" *matNoDataRow>
-      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-    </tr>
-  </table>
-
-  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
-</div>
+    <form class="row row-cols-lg-auto">
+        <div class="col-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nom">
+          </div>
+        </div>
+          <div class="col-12">
+            <div class="input-group">
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Statut">
+                <datalist id="datalistOptions">
+                  <option value="En attente">
+                  <option value="Accepter">
+                  <option value="Rejeter">
+                </datalist>
+            </div>
+          </div>
+      
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Rechercher</button>
+        </div>
+      </form>
+      <table class="table table-hover c1">
+        <thead class="table-info">
+            <tr>
+              <th scope="col">Employé</th>
+              <th scope="col">Statut</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="table-light">
+            <tr routerLink="/traitrev">
+              <th scope="row">
+                  <img src="../touslesemployes/njoya.jpg" alt="">
+                  <p>Nom et Prenom</p>
+              </th>
+              <td>En attente</td>
+              <td>Supprimer</td>
+            </tr>
+            <!-- <tr> -->
+                <tr routerLink="/traitrev">
+                    <th scope="row">
+                        <img src="../touslesemployes/njoya.jpg" alt="">
+                        <p>Nom et Prenom</p>
+                    </th>
+                    <td>Accepter</td>
+                    <td>Supprimer</td>
+                </tr>
+                  <tr>
+                    <th scope="row">
+                        <img src="../touslesemployes/njoya.jpg" alt="">
+                        <p>Nom et Prenom</p>
+                    </th>
+                    <td>Rejeter</td>
+                    <td>Supprimer</td>
+                  </tr>
+          </tbody>
+    </table>
+</section>
