@@ -1,0 +1,68 @@
+<!-- <section style="display: inline-block;"> -->
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="23%"  nzBreakpoint="md" [(nzCollapsed)]="isCollapsed"
+  [nzTrigger]="null" style="position: fixed; margin-top: -20px;">
+  <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed" style="padding-bottom: 100%;">
+  <div class="sidebar-logo">
+    <a routerLink="/Administrateur">
+      <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+      <h1>Psetime</h1>
+    </a>
+  </div>
+    <li nz-submenu nzOpen nzTitle="Tableau de bord" nzIcon="dashboard">
+      <ul>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Administrateur">Administrateur</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Employe">Employé</a>
+        </li>
+
+      </ul>
+    </li>
+    <li nz-submenu nzOpen nzTitle="Employés " nzIcon="user">
+      <ul>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Tous_les_employes">Tous les employés</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Presences">Présences</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Groupes">Groupes</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Jour_feriers">Jour féviers</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Conges">Congés</a>
+        </li>
+      </ul>
+    </li>
+    <li nz-submenu nzOpen nzTitle="Requêtes" nzIcon="pull-request">
+      <ul>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/R_Revendications">Revendications</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/R_Permissions">Permissions</a>
+        </li>
+
+      </ul>
+    </li>
+    <li nz-submenu nzOpen nzTitle="Demandes" nzIcon="form">
+      <ul>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/D_Revendications">Revendications</a>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/D_Permissions">Permissions</a>
+        </li>
+
+      </ul>
+    </li>
+
+    <li nz-submenu nzOpen nzTitle="Paramètres" nzIcon="setting">
+    <li nz-submenu nzOpen nzTitle="Notifications" nzIcon="bell" routerLink="/notif">
+    </li>
+  </ul>
+</nz-sider>

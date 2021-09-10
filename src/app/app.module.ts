@@ -63,6 +63,7 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './pages/login/login.component';
+import { WelcomeComponent} from './pages/welcome/welcome.component'
 import { TraitRevendicationsComponent } from './pages/trait-revendications/trait-revendications.component';
 import { TraitPermissisonComponent } from './pages/trait-permissison/trait-permissison.component';
 import { CongesEmployesComponent } from './pages/Employes/conges-employes/conges-employes.component';
@@ -97,6 +98,7 @@ registerLocaleData(hi);
     GraphessComponent,
     MontreComponent,
     GraphesssComponent,
+    WelcomeComponent,
     PieAComponent,
     PieBComponent,
     PieCComponent,
@@ -146,6 +148,7 @@ registerLocaleData(hi);
 
     MatFormFieldModule,
     RouterModule.forRoot([
+    {path:'', component: LoginComponent},
     {path:'Administrateur', component: AdministrateurComponent},
     {path:'Tous_les_employes', component: TousLesEmployesComponent},
     {path:'Conges', component: CongesComponent},
@@ -164,6 +167,7 @@ registerLocaleData(hi);
     {path:'traitperm', component: TraitPermissisonComponent},
     {path:'notif', component: NotificationsComponent},
     {path:'conges-employe', component: CongesEmployesComponent},
+    {path:'login', component: LoginComponent},
 
     ])
 

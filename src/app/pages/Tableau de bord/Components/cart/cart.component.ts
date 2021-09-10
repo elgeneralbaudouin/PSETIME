@@ -41,7 +41,7 @@ export class CartComponent {
     this.chartOptions = {
       series: [42, 39, 35, 29, 26],
         chart: {
-          width: 380,
+          width: 278,
           type: 'polarArea'
         },
         labels: ['Rose A', 'Rose B', 'Rose C', 'Rose D', 'Rose E'],

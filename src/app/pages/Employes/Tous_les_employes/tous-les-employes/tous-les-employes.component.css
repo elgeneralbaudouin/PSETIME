@@ -1,7 +1,7 @@
-section{
-  width: 95%;
+.section{
+  width: 75%;
   display: inline-block;
-  /* float: right; */
+  float: right;
 
   }
   .cl1{

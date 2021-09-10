@@ -1,0 +1,14 @@
+section{
+    width: 75%;
+  display: inline-block;
+  float: right;
+}
+.graph1{
+  margin-top: 10px;
+}
+.graph2{
+  margin: 10px 20px 0 10px;
+}
+.graphe5{
+  margin: 10px 10px 0 10px;
+}

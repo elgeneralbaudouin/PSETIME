@@ -1,6 +1,7 @@
 
 section{
-    width: 95%;
+    width: 75%;
+    float: right;
     display: inline-block;
   }
     .cla_em{

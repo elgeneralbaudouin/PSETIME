@@ -32,6 +32,41 @@ export class TousLesEmployesComponent implements OnInit {
       image3: "assets/img/OIP.jpg",
       Nom: "Nkodo Gaetan",
       Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
+    },
+    {
+      image3: "assets/img/OIP.jpg",
+      Nom: "Nkodo Gaetan",
+      Fonction: "Dev Front End"
     }
   ];
 }
