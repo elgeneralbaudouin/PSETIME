@@ -67,7 +67,7 @@ export class GraphesssComponent {
         dashArray: [0, 8, 5]
       },
       title: {
-        text: "Page Statistics",
+        text: "Historiques de présences",
         align: "left"
       },
       legend: {

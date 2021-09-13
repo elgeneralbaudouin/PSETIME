@@ -1,5 +1,5 @@
 <app-welcome></app-welcome>
-<section>
+<section *ngIf="authService.isAdmin()">
     <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class ="stats-cards">
         <mat-card fxFlex="48" class="graph1">
           <app-graph></app-graph>

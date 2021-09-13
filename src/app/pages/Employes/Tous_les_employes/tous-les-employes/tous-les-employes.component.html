@@ -70,10 +70,20 @@
                   <option value="Infographe">
                 </datalist>
           </div>
+          <div class="div-modal col-md-12" *ngIf="authService.isSuperadmin()">
+            <label class="form-label">Role</label>
+            <input class="form-control" list="datalist001" placeholder="Role" required>
+                <datalist id="datalist001">
+                  <option value="administrateur">
+                  <option value="employe">
+                  <option value="superadministrateur">
+                </datalist>
+          </div>
           <div class="div-modal col-md-12">
             <label for="validationCustom01" class="form-label">Image</label>
             <input type="file" class="form-control" id="validationCustom01" required style="width: 97%;">
           </div>
+         
 
           <p class="modal-title">Informations personnelles</p>
 

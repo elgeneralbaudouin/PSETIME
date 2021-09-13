@@ -1,0 +1,23 @@
+<!-- <app-welcome></app-welcome> -->
+<section>
+    <div class="cla_em">
+        <p class="nom_em"><span>PSE</span>TIME / Groupe</p>
+    </div>
+
+    <div class="cla_em ftr" *ngFor="let group of groupem">
+        <h2>Nom du Groupe</h2>
+        <div class="col-md-4 coltext txtr">
+            <p>Heure D'arrivée :<b> {{group.hArr}}</b></p>
+            <p>Heure De Depart :<b> {{group.hDep}}</b></p>
+            <p>Temps à éffectué :<b> {{group.tEff}}</b></p>
+        </div>
+        <div class="col-md-4 dir2">
+            <p>Debut de Congés :<b> {{group.deCon}}</b></p>
+            <p>Fin de Congés :<b> {{group.finCon}}</b></p>
+            <p>Type de congé :<b> {{group.conAnn}}</b></p>
+        </div>      
+
+    </div>
+
+
+</section>

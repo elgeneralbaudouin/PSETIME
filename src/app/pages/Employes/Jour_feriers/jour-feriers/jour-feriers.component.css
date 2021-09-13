@@ -56,3 +56,19 @@ section{
 .vg{
   width: 95%;
 }
+table{
+  margin: 30px 30px 0 30px; 
+  width: 95%;    
+}        
+tr{
+  height: 50px;
+}
+td{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+th{
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}

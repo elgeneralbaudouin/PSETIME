@@ -3,7 +3,7 @@
   <div class="cla_em">
       <p class="nom_em"><span>PSE</span>TIME / Congés</p>
   </div>
-  <button class="cl1 b1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa9">Ajouter congé</button>
+  <button class="cl1 b1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa9" *ngIf="authService.isAdmin()">Ajouter congé</button>
 
   <div class="modal fade" id="exampleModa9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -103,19 +103,19 @@
     <table class="table table-hover c1">
       <thead class="table-info">
           <tr>
-            <th scope="col">Employé</th>
+            <th scope="col" *ngIf="authService.isAdmin()">Employé</th>
             <th scope="col">Type de Congé</th>
             <th scope="col">Depart</th>
             <th scope="col">Fin</th>
             <th scope="col">Nbre de jour</th>
             <th scope="col">Raison</th>
             <th scope="col">Statut</th>
-            <th>Action</th>
+            <th *ngIf="authService.isAdmin()">Action</th>
           </tr>
         </thead>
         <tbody class="table-light">
           <tr *ngFor="let conges of congesEmploye">
-            <td>
+            <td *ngIf="authService.isAdmin()">
                 <p>{{conges.nom}}</p>
             </td>
             <td>{{conges.type}}</td>
@@ -124,7 +124,7 @@
             <td>{{conges.nombre}}</td>
             <td>{{conges.raison}}</td>
             <td>{{conges.statut}}</td>
-            <td>{{conges.action}}</td>
+            <td *ngIf="authService.isAdmin()">{{conges.action}}</td>
           </tr>
         </tbody>
   </table>

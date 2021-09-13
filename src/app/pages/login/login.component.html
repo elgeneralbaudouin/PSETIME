@@ -1,4 +1,4 @@
-<section class="section"> 
+<!-- <section class="section"> 
     <form class="login-form" (ngSubmit)="onSubmit(formul)" #formul="ngForm">
         <h1>Se connecter</h1>
             <div class="form-group">
@@ -13,4 +13,25 @@
                 <a href="#">Mot de passe oublié</a>
             </div>              
     </form>
+</section> -->
+
+<section class="section"> 
+    <form class="login-form">
+        <h1>Se connecter</h1>
+            <div class="form-group">
+                <input type="text" placeholder="Nom d'utilisateur" class="form-control" name="name" [(ngModel)]="user.username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Mot de passe" class="form-control" name="pass" [(ngModel)]="user.password" required>
+            </div>
+            <div style="border: 1px solid rgb(146, 140, 140);"></div>
+            <div style="margin-top: 20px;">
+                <button class="btn" type="submit" (click)="onLoggedin()">connexion</button>
+                <a href="#">Mot de passe oublié</a>
+            </div>  
+            <div class="alert alert-danger" *ngIf="erreur==1">
+                <strong>les données remplies ne sont pas corrects</strong>
+            </div>       
+    </form>     
+   
 </section>

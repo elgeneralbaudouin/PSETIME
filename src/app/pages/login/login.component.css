@@ -60,6 +60,12 @@
       a:hover{
         text-decoration: underline;
       }
+
+      .alert{
+        height: 35px;
+        text-align: center;
+      }
+
       @media(max-width: 767px){
         body{
           background-size: cover;

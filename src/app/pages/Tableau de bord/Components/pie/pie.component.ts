@@ -33,11 +33,11 @@ export class PieComponent {
       plotOptions: {
         radialBar: {
           hollow: {
-            size: "70%"
+            size: "60%"
           }
         }
       },
-      labels: ["Cricket"]
+      labels: ["Pourcentage"]
     };
   }
 }

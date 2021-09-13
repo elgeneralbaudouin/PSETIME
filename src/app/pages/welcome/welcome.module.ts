@@ -12,4 +12,10 @@ import { WelcomeComponent } from './welcome.component';
 })
 export class WelcomeModule { 
   // isCollapsed = false;
+
+  // public imageEmploye: any[] = [
+  //   {
+  //     image3: "assets/img/OIP.jpg",
+  //   }
+  // ];
 }

@@ -1,0 +1,105 @@
+<!-- <app-welcome></app-welcome> -->
+<section>
+    <div class="cla_em">
+        <p class="nom_em"><span>PSE</span>TIME / Présence</p>
+    </div>
+    <button class="cl1 b1 btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#exampleModlo">
+      Configuration</button>
+
+      <div class="modal fade" id="exampleModlo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" *ngFor="let presenceem1 of presencconfig">
+                <p>Heure D'arrivée : <b>{{presenceem1.heurearrconfig}}</b></p>
+                <p>Heure De Depart : <b>{{presenceem1.heuredepconfig}}</b></p>
+                <p>Temps à éffectué : <b>{{presenceem1.temaeffe}}</b></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="row row-cols-lg-auto">
+        <div class="div-modal col-12">
+            <input class="form-control" list="datali31" placeholder="Statut" required>
+                <datalist id="datali31">
+                  <option value="Present">
+                  <option value="Absent">
+                </datalist>
+          </div>
+      
+        <div class="div-modal col-12">
+            <input class="form-control" list="datali33" placeholder="Selectionner un mois" required>
+                <datalist id="datali33">
+                  <option value="Janvier">
+                  <option value="Fevrier">
+                  <option value="Mars">
+                  <option value="Avril">
+                  <option value="Mai">
+                  <option value="Juin"> 
+                  <option value="Juillet">
+                  <option value="Aout">
+                  <option value="Septembre">
+                  <option value="Octobre">
+                  <option value="Novembre">
+                  <option value="Decembre">
+                </datalist>
+          </div>
+      
+          <div class="div-modal col-12">
+            <input class="form-control" list="datali32" placeholder="Selectionner l'année" required>
+                <datalist id="datali32">
+                  <option value="2010">
+                  <option value="2011">
+                  <option value="2012">
+                  <option value="2013">
+                  <option value="2014">
+                  <option value="2015"> 
+                  <option value="2016">
+                  <option value="2017">
+                  <option value="2018">
+                  <option value="2019">
+                  <option value="2020">
+                  <option value="2021">
+                </datalist>
+          </div>
+      
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Rechercher</button>
+        </div>
+      </form>
+      <table class="table table-hover c1">
+        <thead class="table-info">
+            <tr>
+              <th scope="col" class="thead">date</th>
+              <th scope="col" class="thead">Statut</th>
+              <th scope="col" class="thead">Heure D'arrivée</th>
+              <th scope="col" class="thead">Heure De Depart</th>
+              <th scope="col" class="thead">Temps à éffectué</th>
+              <th scope="col" class="thead">Heure Supplementaire</th>
+              <th scope="col" class="thead">Retard</th>
+              <!-- <th>Action</th> -->
+            </tr>
+          </thead>
+          <tbody class="table-light">
+            <tr *ngFor="let presenceem of presenceEmploye">
+              <th scope="row">
+                  <p>{{presenceem.date}}</p>
+              </th>
+              <td>{{presenceem.statut}}</td>
+              <td>{{presenceem.heurearrive}}</td>
+              <td>{{presenceem.heuredep}}</td>
+              <td>{{presenceem.tempseffectue}}</td>
+              <td>{{presenceem.heuresup}}</td>
+              <td>{{presenceem.retard}}</td>
+              <!-- <td style="color: red;"><mat-icon>delete_forever</mat-icon></td> -->
+            </tr>
+          </tbody>
+    </table>
+</section>

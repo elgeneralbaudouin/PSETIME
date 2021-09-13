@@ -1,5 +1,5 @@
 <app-welcome></app-welcome>
-<section>
+<section *ngIf="authService.isAdmin()">
     <div class="cla_em">
         <p class="nom_em"><span>PSE</span>TIME / Groupe</p>
     </div>
@@ -99,3 +99,4 @@
       </div>
     </div>
 </section>
+<app-groupe-employe *ngIf="authService.isEmploye()"></app-groupe-employe>

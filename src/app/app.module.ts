@@ -67,6 +67,8 @@ import { WelcomeComponent} from './pages/welcome/welcome.component'
 import { TraitRevendicationsComponent } from './pages/trait-revendications/trait-revendications.component';
 import { TraitPermissisonComponent } from './pages/trait-permissison/trait-permissison.component';
 import { CongesEmployesComponent } from './pages/Employes/conges-employes/conges-employes.component';
+import { GroupeEmployeComponent } from './pages/Employes/groupe-employe/groupe-employe.component';
+import { PresenceEmployeComponent } from './pages/Employes/presence-employe/presence-employe.component';
 
 
 registerLocaleData(hi);
@@ -106,7 +108,9 @@ registerLocaleData(hi);
     TraitRevendicationsComponent,
     TraitPermissisonComponent,
     NotificationsComponent,
-    CongesEmployesComponent
+    CongesEmployesComponent,
+    GroupeEmployeComponent,
+    PresenceEmployeComponent
 
   ],
 
@@ -168,6 +172,8 @@ registerLocaleData(hi);
     {path:'notif', component: NotificationsComponent},
     {path:'conges-employe', component: CongesEmployesComponent},
     {path:'login', component: LoginComponent},
+    {path:'groupe-employe', component: GroupeEmployeComponent},
+    {path:'presence-employe', component: PresenceEmployeComponent},
 
     ])
 

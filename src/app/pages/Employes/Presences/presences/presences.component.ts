@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource,MatTableModule} from '@angular/material/Table';
+import { AuthService } from './../../../services/auth.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import {MatTableDataSource,MatTableModule} from '@angular/material/Table';
 })
 export class PresencesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
   ngOnInit(): void {
   }
 

@@ -8,9 +8,13 @@
       <h1>Psetime</h1>
     </a>
   </div>
+  
+  <li nz-menu-item nzMatchRouter>
+    <a class="nav-link">{{authService.loggedUser}}</a>
+    </li>
     <li nz-submenu nzOpen nzTitle="Tableau de bord" nzIcon="dashboard">
       <ul>
-        <li nz-menu-item nzMatchRouter>
+        <li nz-menu-item nzMatchRouter *ngIf="authService.isAdmin()">
           <a routerLink="/Administrateur">Administrateur</a>
         </li>
         <li nz-menu-item nzMatchRouter>
@@ -21,24 +25,25 @@
     </li>
     <li nz-submenu nzOpen nzTitle="Employés " nzIcon="user">
       <ul>
-        <li nz-menu-item nzMatchRouter>
+        <li nz-menu-item nzMatchRouter *ngIf="authService.isAdmin()">
           <a routerLink="/Tous_les_employes">Tous les employés</a>
         </li>
         <li nz-menu-item nzMatchRouter>
           <a routerLink="/Presences">Présences</a>
         </li>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/Groupes">Groupes</a>
-        </li>
+       
         <li nz-menu-item nzMatchRouter>
           <a routerLink="/Jour_feriers">Jour féviers</a>
         </li>
         <li nz-menu-item nzMatchRouter>
           <a routerLink="/Conges">Congés</a>
         </li>
+        <li nz-menu-item nzMatchRouter>
+          <a routerLink="/Groupes">Groupes</a>
+        </li>
       </ul>
     </li>
-    <li nz-submenu nzOpen nzTitle="Requêtes" nzIcon="pull-request">
+    <li nz-submenu nzOpen nzTitle="Requêtes" nzIcon="pull-request" *ngIf="authService.isAdmin()">
       <ul>
         <li nz-menu-item nzMatchRouter>
           <a routerLink="/R_Revendications">Revendications</a>

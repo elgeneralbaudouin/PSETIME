@@ -1,5 +1,5 @@
 <app-welcome></app-welcome>
-<section>
+<section *ngIf="authService.isAdmin()">
   <div class="cla_em">
       <p class="nom_em"><span>PSE</span>TIME / Presence</p>
   </div>
@@ -169,3 +169,4 @@
   </div>
 
 </section>
+<app-presence-employe *ngIf="authService.isEmploye()"></app-presence-employe>

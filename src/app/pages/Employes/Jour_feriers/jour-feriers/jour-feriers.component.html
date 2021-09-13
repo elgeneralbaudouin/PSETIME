@@ -3,9 +3,8 @@
   <div class="cla_em">
     <p class="nom_em"><span>PSE</span>TIME / Jour Ferier</p>
   </div>
-  <button class="cl1 b1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter Jour Ferier</button>
+  <button class="cl1 b1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf="authService.isAdmin()" >Ajouter Jour Ferier</button>
   
-  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
@@ -38,40 +37,61 @@
   </div>
   </div>
   
-  <mat-table [dataSource]="dataSource" class="mat-elevation-z10 vg cl1">
-    <!-- Position Column -->
+  <!-- <mat-table [dataSource]="dataSource" class="mat-elevation-z10 vg cl1">
+
     <ng-container matColumnDef="id">
       <mat-header-cell class="mat-header-cell" *matHeaderCellDef> ID </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
     </ng-container>
   
-    <!-- Name Column -->
+   
     <ng-container matColumnDef="titre">
       <mat-header-cell *matHeaderCellDef> Titre </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.titre}} </mat-cell>
     </ng-container>
-  
-    <!-- Weight Column -->
     <ng-container matColumnDef="date">
       <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
     </ng-container>
-  
-    <!-- Symbol Column -->
     <ng-container matColumnDef="jour">
       <mat-header-cell *matHeaderCellDef> Jour </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.jour}} </mat-cell>
     </ng-container>
+      <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.action}} </mat-cell>
+      </ng-container>
+      -->
   
-     <ng-container matColumnDef="action">
-      <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.action}} </mat-cell>
-    </ng-container>
   
   
-  
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <!-- <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
+  </mat-table> -->
+  <table class="table table-hover c1">
+    <thead class="table-info">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Date</th>
+          <th scope="col">Jour</th>
+          <th *ngIf="authService.isAdmin()">Action</th>
+        </tr>
+      </thead>
+      <tbody class="table-light">
+        <tr *ngFor="let conges of ferierEmploye">
+          <td>{{conges.id}}</td>
+          <td>{{conges.titre}}</td>
+          <td>{{conges.datedep}}</td>
+          <td>{{conges.jour}}</td>
+          <td *ngIf="authService.isAdmin()">{{conges.action}}</td>
+        </tr>
+      </tbody>
+</table>
   
 </section>
+<!-- id: "1",
+      titre: "Nouvel An",
+      datedep: "1 janvier 2020",
+      jour: "Mercredi",
+      action: "" -->
