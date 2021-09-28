@@ -73,20 +73,20 @@ section{
                 font-family: 'Times New Roman', Times, serif;
                 color: rgb(27, 158, 245);
             }
-        .txtr{
+        /* .txtr{
             position: relative;
             right: -80px;
 
-        }
+        } */
         .pts{
             position: relative;
             top: -30px;
         }
         .coltext{
-            display: inline-block;
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
-            padding-left: 10px;
+            text-align: center;
+            /* padding-left: 10px; */
         }
         .coltext > p{
                 padding-top: 5px;

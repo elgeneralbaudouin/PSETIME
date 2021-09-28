@@ -15,27 +15,27 @@
       <div class="modal-body">
         <p class="modal-title">Créer un Groupe</p>
         <form>
-          <div class="div-modal col-md-6">
+          <div class="div-modal col-md-12">
             <label for="validationCustom01" class="form-label">Nom du groupe</label>
             <input type="text" class="form-control" required>
           </div>
-          <div class="div-modal col-md-6">
+          <div class="div-modal col-md-12">
             <label for="validationCustom01" class="form-label">Heure d'arrivée</label>
             <input type="time" class="form-control" required>
           </div>
-          <div class="div-modal col-md-6">
+          <div class="div-modal col-md-12">
             <label for="validationCustom01" class="form-label">Heure de depart</label>
             <input type="time" class="form-control" required>
           </div>
-          <div class="div-modal col-md-6">
+          <!-- <div class="div-modal col-md-6">
             <label for="validationCustom01" class="form-label">Date de Debut de Congés</label>
             <input type="date" class="form-control" required>
           </div>
           <div class="div-modal col-md-6">
             <label for="validationCustom01" class="form-label">Date de fin de Congés</label>
             <input type="date" class="form-control" required>
-          </div>
-          <div class="div-modal col-md-6">
+          </div> -->
+          <!-- <div class="div-modal col-md-6">
             <label class="form-label">Type de conges</label>
             <input class="form-control" list="datalist" placeholder="Poste" required>
                 <datalist id="datalist">
@@ -43,7 +43,7 @@
                   <option value="Annuel">
                   <option value="Deuil">
                 </datalist>
-          </div>
+          </div> -->
           <button type="button" class="btn btn-primary ajt">Ajouter</button>
         </form>
       </div>
@@ -74,7 +74,7 @@
 
 
     <div class="modal fade" id="exampleMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -82,15 +82,15 @@
           <div class="modal-body" *ngFor="let tab of tableau">
             <p class="modal-title">Nom du Groupe</p>
     
-              <div class="col-md-6 coltext txtr">
+              <div class="col-md-12 coltext txtr">
                 <p>Heure D'arrivée : <b>{{tab.arriv}}</b></p>
                 <p>Heure De Depart : <b>{{tab.depart}}</b></p>
                 <p>Temps à éffectué : <b>{{tab.temps}}</b></p>
               </div>
-              <div class="col-md-6 coltext pts">
+              <!-- <div class="col-md-6 coltext pts">
                 <p>Date de Debut de Congés : <b>{{tab.deconges}}</b></p>
                 <p>Date de Fin de Congés : <b>{{tab.finconges}}</b></p>
-            </div>
+            </div> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
